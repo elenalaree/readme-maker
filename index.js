@@ -1,18 +1,39 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const fs = require('fs');
+// const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-const generatePage = require('./utils/page-template');
+// const generatePage = require('./utils/page-template');
 
 
-const profileDataArgs = process.argv.slice(2, process.argv.length);
-const [name, github] = profileDataArgs;
-
-const printProfileData = profileDataArr => {
-    profileDataArr.forEach((profileItem) => console.log(profileItem));
-    };
-  
-  printProfileData(profileDataArgs);
+inquirer
+    .prompt([
+        {
+            type: 'input',
+            name: 'name',
+            message: 'What is the title of your Project?'
+        },
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Please describe your project.'
+        },
+        {
+            type:'input',
+            name: 'instructions',
+            message: 'Please explain how to install your project.'
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'How would one use this application?'
+        },
+        {
+            type: 'input',
+            name: 'guidelines',
+            message: 'What can be contributed to your Project?'
+        },
+        
+    ])
 
 // TODO: Create an array of questions for user input
 const questions = [];
@@ -38,11 +59,11 @@ function writeToFile(fileName, data) {
 }
 
 
-fs.writeFile('README.md', generatePage(name, github), err => {
-    if (err) throw err;
+// fs.writeFile('./utils/README.md', generatePage(name, github), err => {
+//     if (err) throw err;
   
-    console.log('Portfolio complete! Check out index.html to see the output!');
-  });
+//     console.log('Portfolio complete! Check out index.html to see the output!');
+//   });
 // TODO: Create a function to initialize app
 function init() {}
 
