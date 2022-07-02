@@ -75,7 +75,7 @@ function generateMarkdown(data) {
   ## License
   
   ${licenseName}
-  [link](${licenseLink})
+  ${licenseLink}
   
   ## Contribute
   
