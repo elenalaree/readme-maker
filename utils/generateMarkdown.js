@@ -1,20 +1,98 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+// licenses
+const licensesArray = [
+    {
+      name: 'Apache',
+      link: '[link](https://www.apache.org/licenses/LICENSE-2.0)',
+      shield: '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+    },
+    {
+      name: 'MIT',
+      link: '[link](https://opensource.org/licenses/MIT)',
+      shield: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+    },
+    {
+      name: 'Boost',
+      link: '[link](https://www.boost.org/LICENSE_1_0.txt)',
+      shield: '[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)]'
+    },
+    {
+      name: 'Mozilla',
+      link: '[link](https://opensource.org/licenses/MPL-2.0)',
+      shield: '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)]'
+    },
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+]
+//collects information about licenses
+function renderLicenseLink(license) {
+  //if the question is not answered, execute if
+  if(license.licenses == ''){
+    let licenseShield = '';
+    let licenseLink = '';
+    let licenseName = '';
+    return {licenseShield, licenseLink,  licenseName};
+  //if the question is answered, execute else
+  } else {
+    let liName = licensesArray.find(({name}) => name == license.licenses);
+    let licenseShield = liName.shield;
+    let licenseLink = liName.link;
+    let licenseName = liName.name;
+    return {licenseShield, licenseLink,  licenseName};
+}
+}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
+//creates the markdown for the readme.
 function generateMarkdown(data) {
-  return `# ${data.title}
+  let liName = renderLicenseLink(data);
+  let licenseShield = liName.licenseShield;
+  let licenseLink = liName.licenseLink;
+  let licenseName = liName.licenseName;
+  return `# ${data.title}                     ${licenseShield} 
+
+ 
+  
+  ## Description 
+  
+  ${data.description} 
+  
+  ## Table of Contents 
+  
+  [Description](#description)
+  [Installation](#installation)
+  [Usage](#usage)
+  [License](#license)
+  [Contribute](#contribute)
+  [Tests](#tests)
+  [Questions](#questions)
+   
+  ## Installation
+  
+  ${data.instructions}
+  
+  ## Usage
+  
+  ${data.usage}
+  
+  ## License
+  
+  ${licenseName}
+  [link](${licenseLink})
+  
+  ## Contribute
+  
+  ${data.guidelines}
+  
+  ## Tests
+  
+  ${data.test}
+  
+  ## Questions
+  
+  GitHub: ${data.username}
+  Email ${data.email} for questions.
 
 `;
 }
 
 module.exports = generateMarkdown;
+
+
