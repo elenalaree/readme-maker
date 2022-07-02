@@ -1,8 +1,12 @@
 # README Maker
 
+
 ## Description 
 
-This Application creates a quality read me using command line input from a user. It inserts user information into the newly created or currently existing read me in the location specified. 
+This Application creates a quality read me using command line input from a user. It inserts user information into the newly created or currently existing read me in the location specified.
+ 
+It was created using node.js with Inquirer and fs.
+
 [Video-Link](https://drive.google.com/file/d/1ZQ-9gBOvRB7fGhmEn_fLxczWEp6jD9MC/view)
 
 ## Table of Contents 
@@ -39,4 +43,4 @@ I used many tests to make this app
 
 GitHub: [Elenalaree](https://github.com/elenalaree)
 
-
+![README maker](./img/maker-example.png)

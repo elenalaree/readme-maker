@@ -1,10 +1,10 @@
-# Name                      
+# Project Title                     [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)] 
 
  
   
   ## Description 
   
-  Describe it 
+  This is a description of my project. It is a very nice project with special features! 
   
   ## Table of Contents 
   
@@ -18,27 +18,27 @@
    
   ## Installation
   
-  Install
+  We install using github by cloning to a local file. Use npm install to get needed packages.
   
   ## Usage
   
-  Use it
+  With much care, love, and deliberation.
   
   ## License
   
-  
-  
+  Mozilla
+  [link](https://opensource.org/licenses/MPL-2.0)
   
   ## Contribute
   
-  Nothing
+  Nothing.
   
   ## Tests
   
-  Testy
+  With testy bits.
   
   ## Questions
   
-  GitHub: none
-  Email Fake@mail.com for questions.
+  GitHub: Projecthub
+  Email Email@fake.com for questions.
 
