@@ -3,6 +3,7 @@
 ## Description 
 
 This Application creates a quality read me using command line input from a user. It inserts user information into the newly created or currently existing read me in the location specified. 
+[Video-Link](https://drive.google.com/file/d/1ZQ-9gBOvRB7fGhmEn_fLxczWEp6jD9MC/view)
 
 ## Table of Contents 
 
