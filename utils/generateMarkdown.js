@@ -46,49 +46,48 @@ function generateMarkdown(data) {
   let licenseShield = liName.licenseShield;
   let licenseLink = liName.licenseLink;
   let licenseName = liName.licenseName;
-  return `# ${data.title}                     ${licenseShield} 
+  return `
+# ${data.title}                     ${licenseShield}
 
- 
-  
-  ## Description 
-  
-  ${data.description} 
-  
-  ## Table of Contents 
-  
-  [Description](#description)
-  [Installation](#installation)
-  [Usage](#usage)
-  [License](#license)
-  [Contribute](#contribute)
-  [Tests](#tests)
-  [Questions](#questions)
-   
-  ## Installation
-  
-  ${data.instructions}
-  
-  ## Usage
-  
-  ${data.usage}
-  
-  ## License
-  
-  ${licenseName}
-  ${licenseLink}
-  
-  ## Contribute
-  
-  ${data.guidelines}
-  
-  ## Tests
-  
-  ${data.test}
-  
-  ## Questions
-  
-  GitHub: ${data.username}
-  Email ${data.email} for questions.
+## Description
+
+${data.description}
+
+## Table of Contents
+
+[Description](#description)
+[Installation](#installation)
+[Usage](#usage)
+[License](#license)
+[Contribute](#contribute)
+[Tests](#tests)
+[Questions](#questions)
+
+## Installation
+
+${data.instructions}
+
+## Usage
+
+${data.usage}
+
+## License
+
+${licenseName}
+${licenseLink}
+
+## Contribute
+
+${data.guidelines}
+
+## Tests
+
+${data.test}
+
+## Questions
+
+GitHub: ${data.username}
+Email ${data.email} for questions.
 
 `;
 }

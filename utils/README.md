@@ -2,34 +2,34 @@
 
  
   
-  ## Description 
+## Description 
   
   This is a description of my project. It is a very nice project with special features! 
   
-  ## Table of Contents 
+## Table of Contents 
   
-  [Description](#description)
-  [Installation](#installation)
-  [Usage](#usage)
-  [License](#license)
-  [Contribute](#contribute)
-  [Tests](#tests)
-  [Questions](#questions)
+[Description](#description)
+[Installation](#installation)
+[Usage](#usage)
+[License](#license)
+[Contribute](#contribute)
+[Tests](#tests)
+[Questions](#questions)
    
-  ## Installation
+## Installation
   
   We install using github by cloning to a local file. Use npm install to get needed packages.
   
-  ## Usage
+## Usage
   
   With much care, love, and deliberation.
   
-  ## License
+## License
   
   Mozilla
   [link](https://opensource.org/licenses/MPL-2.0)
   
-  ## Contribute
+## Contribute
   
   Nothing.
   
